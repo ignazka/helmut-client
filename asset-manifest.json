@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5f5b0e2.css",
-    "main.js": "/static/js/main.29c2b447.js",
-    "static/js/787.dfddedda.chunk.js": "/static/js/787.dfddedda.chunk.js",
-    "index.html": "/index.html",
-    "main.a5f5b0e2.css.map": "/static/css/main.a5f5b0e2.css.map",
-    "main.29c2b447.js.map": "/static/js/main.29c2b447.js.map",
-    "787.dfddedda.chunk.js.map": "/static/js/787.dfddedda.chunk.js.map"
+    "main.css": "/helmjt-client/static/css/main.a5f5b0e2.css",
+    "main.js": "/helmjt-client/static/js/main.cee4a426.js",
+    "static/js/787.dfddedda.chunk.js": "/helmjt-client/static/js/787.dfddedda.chunk.js",
+    "index.html": "/helmjt-client/index.html",
+    "main.a5f5b0e2.css.map": "/helmjt-client/static/css/main.a5f5b0e2.css.map",
+    "main.cee4a426.js.map": "/helmjt-client/static/js/main.cee4a426.js.map",
+    "787.dfddedda.chunk.js.map": "/helmjt-client/static/js/787.dfddedda.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5f5b0e2.css",
-    "static/js/main.29c2b447.js"
+    "static/js/main.cee4a426.js"
   ]
 }
