@@ -1,38 +1,189 @@
 .App {
-  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: 'Open Sans';
+  width: 100vw;
+}
+.Menu a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: black;
+  transition: ease-in-out 350ms;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Menu a:hover {
+  color: rgb(126, 0, 105);
+}
+.Menu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 5px;
+  left: 0;
+  background-color: rgb(126, 0, 105);
+  transform-origin: bottom right;
+  transition: transform 400ms ease-out;
+}
+.Menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.transparent-menu-ctn {
+}
+
+.Menu div:hover {
+  color: rgb(126, 0, 105);
+}
+
+.Galerie {
+}
+
+.Galerie .picture-text {
+  padding-top: 1.2em;
+}
+
+.PictureForm {
+  width: 50%;
+  padding-top: 20vh;
+  margin: auto;
+}
+
+.Footer {
+  color: rgba(0, 0, 0, 0.953);
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+.Bio {
+  width: 50%;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .App {
+    background-color: white;
+    color: black;
+    font-family: 'Open Sans';
+    width: 100%;
+    padding: 35px;
+    margin-top: 20px;
   }
-}
+  .Menu a {
+    text-decoration: none;
+    position: relative;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    color: black;
+    transition: ease-in-out 350ms;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Menu a:hover {
+    color: rgb(126, 0, 105);
+  }
+  .Menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: rgb(126, 0, 105);
+    transform-origin: bottom right;
+    transition: transform 400ms ease-out;
+  }
+  .Menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /* .Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .Menu {
+    text-align: left;
+    font-size: 1.2em;
+    font-family: 'Alfa Slab One', Cursive;
+  }
+
+  .transparent-menu-ctn {
+  }
+
+  .Menu div:hover {
+    color: rgb(126, 0, 105);
+  }
+
+  /* .Logo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-left: 50px;
+    padding-top: 30px;
+    font-family: 'Alfa Slab One', Cursive;
+    font-size: 2.4em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 8px;
+  } */
+
+  .Logo {
+    font-family: 'Alfa Slab One', Cursive;
+    font-size: 1.8em;
+    background-color: black;
+    color: white;
+    padding: 5px 30px;
+    margin-bottom: 20px;
+  }
+
+  .Main {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Logo span {
+    padding-bottom: 30px;
+  }
+
+  .Galerie {
+    width: 80vw;
+    padding-left: 25vw;
+  }
+
+  .Galerie .picture-text {
+    padding-top: 1.2em;
+  }
+
+  .PictureForm {
+    width: 50%;
+    padding-top: 20vh;
+    margin: auto;
+  }
+
+  .Footer {
+    color: white;
+    width: 100%;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: black;
+  }
+
+  .Bio {
+    width: 50%;
+    margin: auto;
   }
 }
