@@ -14,13 +14,19 @@ function App() {
   return (
     <div className='App'>
       {matches ? <Main /> : <SimpleBottomNavigation />}
+      <div className='content'>
       <Routes>
+        
+  
         <Route path='/add' element={<PictureForm />} />
         <Route exact path='/' element={<Galerie />}>
           <Route exact path=':image' element={<Work />} />
         </Route>
         <Route path='/vita' element={<Vita />} />
+       
       </Routes>
+      </div>
+      <Footer />
     </div>
   );
 }
