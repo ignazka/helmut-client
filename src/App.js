@@ -19,7 +19,7 @@ function App() {
         <Route exact path='/' element={<Galerie />}>
           <Route exact path=':image' element={<Work />} />
         </Route>
-        <Route path='/bio' element={<Bio />} />
+        <Route path='/vita' element={<Vita />} />
       </Routes>
     </div>
   );
