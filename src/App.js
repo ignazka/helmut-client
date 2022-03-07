@@ -13,6 +13,7 @@ function App() {
   const matches = useMediaQuery('(min-width: 1045px)');
   return (
     <div className='App'>
+      <div className='body'>
       {matches ? <Main /> : <SimpleBottomNavigation />}
       <div className='content'>
       <Routes>
@@ -25,6 +26,7 @@ function App() {
         <Route path='/vita' element={<Vita />} />
        
       </Routes>
+      </div>
       </div>
       <Footer />
     </div>

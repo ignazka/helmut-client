@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'ZIzio';
+    src: url('ZIzio Bold.woff');
+             url:('ZIzio Bold.woff') 
+              format('woff'), 
+             /* für moderne Browser */
+         url('ZIzio Bold.woff2') 
+              format('woff2');
+            /* für Safari, Android, iOS */
+   }

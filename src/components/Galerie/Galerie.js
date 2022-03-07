@@ -25,7 +25,7 @@ function Galerie() {
     <div className='Galerie'>
       {/* End hero unit */}
       {matches ? (
-        <Masonry columns={3} spacing={25}>
+        <Masonry columns={3} spacing={15}>
           {pictures.map((element, index) => (
             <Card key={index} sx={{ border: 'none', boxShadow: 'none' }}>
               <Link to={`${element.image}`}>

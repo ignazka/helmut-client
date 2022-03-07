@@ -1,35 +1,62 @@
+:root {
+  --text-color: rgb(60,60,60);
+  --text-color-background: rgb(255, 255, 141);
+}
+body{
+  font-family: 'Raleway'!important;
+  color:var(--text-color);
+}
 .App {
   background-color: white;
-  color: black;
-  font-family: 'Open Sans';
+  color: var(--text-color);
+  font-family: 'Raleway';
   width: 100vw;
+
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40px;
+
 }
+
+.body{
+  display: grid;
+  grid-template-columns: auto 3fr;
+  overflow: hidden;
+}
+.content{
+  overflow-y: scroll;
+  padding: 80px;
+}
+
 .Menu a {
   text-decoration: none;
   position: relative;
   display: inline-block;
-  color: black;
+  color: var(--text-color);
   transition: ease-in-out 350ms;
 }
 
 .Menu a:hover {
-  color: rgb(126, 0, 105);
+  color: var(--text-color);
 }
 .Menu a::after {
   content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
-  bottom: 5px;
+  height: 100%;
+  bottom: 0px;
   left: 0;
-  background-color: rgb(126, 0, 105);
+  background-color: var(--text-color-background);
   transform-origin: bottom right;
   transition: transform 400ms ease-out;
+  z-index: -1;
 }
 .Menu a:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: bottom right;
 }
 
 .transparent-menu-ctn {
@@ -39,7 +66,8 @@
   color: rgb(126, 0, 105);
 }
 
-.Galerie {
+.Galerie h2, .Galerie h6, .Galerie p{
+  font-family: 'Raleway';
 }
 
 .Galerie .picture-text {
@@ -53,55 +81,45 @@
 }
 
 .Footer {
-  color: rgba(0, 0, 0, 0.953);
+  color: var(--text-color);
   font-size: 0.8em;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   right: 0;
   padding: 10px;
   padding-right: 20px;
+  background-color:white;
+  border-top:1px solid var(--text-color);
 }
 
-.Bio {
+.Vita {
   width: 50%;
   margin: auto;
 }
 
 @media screen and (min-width: 600px) {
   .App {
-    background-color: white;
+    /* background-color: white;
     color: black;
-    font-family: 'Open Sans';
-    width: 100%;
-    padding: 35px;
-    margin-top: 20px;
+    font-family: 'Open Sans'; */
+    /* width: 100%; */
+    /* padding: 50px; */
+    /* margin-top: 20px; */
   }
   .Menu a {
     text-decoration: none;
     position: relative;
-
-    color: black;
     transition: ease-in-out 350ms;
   }
 
   .Menu a:hover {
-    color: rgb(126, 0, 105);
+
   }
   .Menu a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 5px;
-    left: 0;
-    background-color: rgb(126, 0, 105);
-    transform-origin: bottom right;
-    transition: transform 400ms ease-out;
+
   }
   .Menu a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+
   }
 
   /* .Main {
@@ -111,16 +129,16 @@
   } */
 
   .Menu {
-    text-align: left;
-    font-size: 1.2em;
-    font-family: 'Alfa Slab One', Cursive;
+    text-align: right;
+    font-size: 1.6em;
+    /* font-family: 'Alfa Slab One', Cursive; */
   }
 
   .transparent-menu-ctn {
   }
 
   .Menu div:hover {
-    color: rgb(126, 0, 105);
+    /* color: rgb(126, 0, 105); */
   }
 
   /* .Logo {
@@ -137,18 +155,18 @@
   } */
 
   .Logo {
-    font-family: 'Alfa Slab One', Cursive;
-    font-size: 1.8em;
-    background-color: black;
-    color: white;
-    padding: 5px 30px;
+    font-family: 'ZIzio';
+    font-size: 3.5em;
+    /* background-color: var(--text-color-background); */
+    color: var(--text-color);
     margin-bottom: 20px;
   }
 
   .Main {
-    position: fixed;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    min-width: 320px;
   }
 
   .Logo span {
@@ -156,11 +174,12 @@
   }
 
   .Galerie {
-    width: 80vw;
-    padding-left: 25vw;
+    /* width: 75vw;
+    padding-left: 25vw; */
   }
 
   .Galerie .picture-text {
+    font-family: 'Raleway';
     padding-top: 1.2em;
   }
 
@@ -171,18 +190,19 @@
   }
 
   .Footer {
-    color: white;
-    width: 100%;
+    
+    width: auto;
     font-size: 0.8em;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
+    right: 0;
     padding: 10px;
-    padding-left: 20px;
-    background-color: black;
+    padding-right: 20px;
+    text-align: right;
   }
 
-  .Bio {
+  .Vita {
     width: 50%;
     margin: auto;
   }
