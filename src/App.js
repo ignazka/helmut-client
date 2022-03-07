@@ -5,7 +5,7 @@ import { Main } from './components/Main';
 import { Routes, Route } from 'react-router-dom';
 import { PictureForm } from './components/PictureForm';
 import { Galerie } from './components/Galerie';
-import { Bio } from './components/Bio';
+import { Vita } from './components/Vita';
 import { Work } from './components/Work';
 import { useMediaQuery } from '@mui/material';
 import { SimpleBottomNavigation } from './components/SimpleBottomNavigation';
