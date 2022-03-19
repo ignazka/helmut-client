@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Bio() {
+function Vita() {
   return (
-    <div className='Bio'>
+    <div className='Vita'>
       <h2>bio</h2>
       <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -19,4 +19,4 @@ function Bio() {
   );
 }
 
-export default Bio;
+export default Vita;

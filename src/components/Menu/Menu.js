@@ -5,9 +5,9 @@ function Menu() {
     <div className='Menu'>
       <Link to='/work'>work</Link>
       <br />
-      <a href='mailto:info@info.de'>contact</a>
+      <Link to='/vita'>vita</Link>
       <br />
-      <Link to='/bio'>bio</Link>
+      <a href='mailto:info@info.de'>contact</a>
     </div>
   );
 }

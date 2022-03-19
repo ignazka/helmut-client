@@ -25,7 +25,7 @@ function Galerie() {
     <div className='Galerie'>
       {/* End hero unit */}
       {matches ? (
-        <Masonry columns={3} spacing={25}>
+        <Masonry columns={3} spacing={15}>
           {pictures.map((element, index) => (
             <Card key={index} sx={{ border: 'none', boxShadow: 'none' }}>
               <Link to={`${element.image}`}>
@@ -41,17 +41,21 @@ function Galerie() {
               </Link>
               <CardContent sx={{ flexGrow: 1 }}>
                 <Typography
-                  sx={{ fontFamily: 'Alfa Slab One' }}
+                  // sx={{ fontFamily: 'Alfa Slab One' }}
                   gutterBottom
                   variant='h5'
                   component='h2'
                 >
                   {element.title}
                 </Typography>
-                <Typography sx={{ fontFamily: 'Open Sans' }} variant='h6'>
+                <Typography 
+                // sx={{ fontFamily: 'Open Sans' }} 
+                variant='h6'>
                   {element.artist}
                 </Typography>
-                <Typography sx={{ fontFamily: 'Open Sans' }}>
+                <Typography 
+                // sx={{ fontFamily: 'Open Sans' }}
+                >
                   {element.year}
                 </Typography>
               </CardContent>
@@ -72,7 +76,7 @@ function Galerie() {
       ) : (
         pictures.map((element, index) => {
           return (
-            <Card key={index} sx={{ border: '1px solid' }}>
+            <Card key={index} sx={{ border: '0px solid' }}>
               <Link to={`${element.image}`}>
                 <CardMedia
                   component='img'
@@ -86,17 +90,21 @@ function Galerie() {
               </Link>
               <CardContent sx={{ flexGrow: 1 }}>
                 <Typography
-                  sx={{ fontFamily: 'Alfa Slab One' }}
+                  // sx={{ fontFamily: 'Alfa Slab One' }}
                   gutterBottom
                   variant='h5'
                   component='h2'
                 >
                   {element.title}
                 </Typography>
-                <Typography sx={{ fontFamily: 'Open Sans' }} variant='h6'>
+                <Typography 
+                // sx={{ fontFamily: 'Open Sans' }} 
+                variant='h6'>
                   {element.artist}
                 </Typography>
-                <Typography sx={{ fontFamily: 'Open Sans' }}>
+                <Typography 
+                // sx={{ fontFamily: 'Open Sans' }}
+                >
                   {element.year}
                 </Typography>
               </CardContent>
@@ -107,8 +115,8 @@ function Galerie() {
                   color='inherit'
                   sx={{ border: 'none', background: 'none' }}
                 >
-                  <Button sx={{ color: 'black' }}>Edit</Button>
-                  <Button sx={{ color: 'black' }}>Delete</Button>
+                  <Button >Edit</Button>
+                  <Button >Delete</Button>
                 </ButtonGroup>
               </CardActions>
             </Card>
