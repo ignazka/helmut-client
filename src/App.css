@@ -7,16 +7,16 @@
   color: var(--text-color);
 
   position: relative;
-  bottom: 5px;
+
   font-weight: bold;
 }
 .css-1ee5err-MuiButtonBase-root-MuiBottomNavigationAction-root {
   background-color: var(--text-color-background) !important;
 }
-.css-1ee5err-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected
+.css-1ee5err-MuiButtonBase-root-MuiBottomNavigationAction-root:first-child
   .css-imwso6-MuiBottomNavigationAction-label {
   font-family: 'ZIzio' !important;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 body {
