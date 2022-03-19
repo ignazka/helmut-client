@@ -48,12 +48,13 @@ function Galerie() {
                 >
                   {element.title}
                 </Typography>
-                <Typography 
-                // sx={{ fontFamily: 'Open Sans' }} 
-                variant='h6'>
+                <Typography
+                  // sx={{ fontFamily: 'Open Sans' }}
+                  variant='h6'
+                >
                   {element.artist}
                 </Typography>
-                <Typography 
+                <Typography
                 // sx={{ fontFamily: 'Open Sans' }}
                 >
                   {element.year}
@@ -76,7 +77,13 @@ function Galerie() {
       ) : (
         pictures.map((element, index) => {
           return (
-            <Card key={index} sx={{ border: '0px solid' }}>
+            <Card
+              key={index}
+              sx={{
+                border: '0px solid',
+                paddingBottom: '100px',
+              }}
+            >
               <Link to={`${element.image}`}>
                 <CardMedia
                   component='img'
@@ -97,12 +104,13 @@ function Galerie() {
                 >
                   {element.title}
                 </Typography>
-                <Typography 
-                // sx={{ fontFamily: 'Open Sans' }} 
-                variant='h6'>
+                <Typography
+                  // sx={{ fontFamily: 'Open Sans' }}
+                  variant='h6'
+                >
                   {element.artist}
                 </Typography>
-                <Typography 
+                <Typography
                 // sx={{ fontFamily: 'Open Sans' }}
                 >
                   {element.year}
@@ -115,8 +123,8 @@ function Galerie() {
                   color='inherit'
                   sx={{ border: 'none', background: 'none' }}
                 >
-                  <Button >Edit</Button>
-                  <Button >Delete</Button>
+                  <Button>Edit</Button>
+                  <Button>Delete</Button>
                 </ButtonGroup>
               </CardActions>
             </Card>

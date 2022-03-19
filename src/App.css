@@ -1,10 +1,27 @@
 :root {
-  --text-color: rgb(60,60,60);
+  --text-color: rgb(60, 60, 60);
   --text-color-background: rgb(255, 255, 141);
 }
-body{
-  font-family: 'Raleway'!important;
-  color:var(--text-color);
+.css-imwso6-MuiBottomNavigationAction-label {
+  font-family: 'Raleway' !important;
+  color: var(--text-color);
+
+  position: relative;
+  bottom: 5px;
+  font-weight: bold;
+}
+.css-1ee5err-MuiButtonBase-root-MuiBottomNavigationAction-root {
+  background-color: var(--text-color-background) !important;
+}
+.css-1ee5err-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected
+  .css-imwso6-MuiBottomNavigationAction-label {
+  font-family: 'ZIzio' !important;
+  font-size: 1em;
+}
+
+body {
+  font-family: 'Raleway' !important;
+  color: var(--text-color);
 }
 .App {
   background-color: white;
@@ -17,17 +34,15 @@ body{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 40px;
-
 }
 
-.body{
+.body {
   display: grid;
   grid-template-columns: auto 3fr;
   overflow: hidden;
 }
-.content{
+.content {
   overflow-y: scroll;
-  padding: 80px;
 }
 
 .Menu a {
@@ -66,7 +81,9 @@ body{
   color: rgb(126, 0, 105);
 }
 
-.Galerie h2, .Galerie h6, .Galerie p{
+.Galerie h2,
+.Galerie h6,
+.Galerie p {
   font-family: 'Raleway';
 }
 
@@ -88,8 +105,8 @@ body{
   right: 0;
   padding: 10px;
   padding-right: 20px;
-  background-color:white;
-  border-top:1px solid var(--text-color);
+  background-color: white;
+  border-top: 1px solid var(--text-color);
 }
 
 .Vita {
@@ -113,13 +130,10 @@ body{
   }
 
   .Menu a:hover {
-
   }
   .Menu a::after {
-
   }
   .Menu a:hover::after {
-
   }
 
   /* .Main {
@@ -190,7 +204,6 @@ body{
   }
 
   .Footer {
-    
     width: auto;
     font-size: 0.8em;
     /* position: fixed; */

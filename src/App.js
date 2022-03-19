@@ -14,19 +14,16 @@ function App() {
   return (
     <div className='App'>
       <div className='body'>
-      {matches ? <Main /> : <SimpleBottomNavigation />}
-      <div className='content'>
-      <Routes>
-        
-  
-        <Route path='/add' element={<PictureForm />} />
-        <Route exact path='/' element={<Galerie />}>
-          <Route exact path=':image' element={<Work />} />
-        </Route>
-        <Route path='/vita' element={<Vita />} />
-       
-      </Routes>
-      </div>
+        {matches ? <Main /> : <SimpleBottomNavigation />}
+        <div className='content'>
+          <Routes>
+            <Route path='/add' element={<PictureForm />} />
+            <Route exact path='/' element={<Galerie />}>
+              <Route exact path=':image' element={<Work />} />
+            </Route>
+            <Route path='/vita' element={<Vita />} />
+          </Routes>
+        </div>
       </div>
       <Footer />
     </div>
