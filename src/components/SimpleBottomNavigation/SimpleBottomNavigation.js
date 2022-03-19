@@ -25,14 +25,14 @@ export default function SimpleBottomNavigation() {
         value={value}
         onChange={(event, newValue) => {
           switch (event.target.innerText) {
-            case 'Contact':
+            case 'contact':
               window.location = 'mailto:xyz@yourapplicationdomain.com';
               break;
-            case 'Work':
+            case 'work':
               navigateTo('/');
               console.log('switch work');
               break;
-            case 'Vita':
+            case 'vita':
               navigateTo('/vita');
               console.log('switch vita');
 
