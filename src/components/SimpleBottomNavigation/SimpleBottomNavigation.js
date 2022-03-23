@@ -18,6 +18,7 @@ export default function SimpleBottomNavigation() {
         position: 'fixed',
         bottom: '0',
       }}
+      className="bottomNav"
     >
       <BottomNavigation
         showLabels
@@ -48,9 +49,10 @@ export default function SimpleBottomNavigation() {
           disabled
           label='Helmut Mark'
         />
-        <BottomNavigationAction label='contact' />
+        
         <BottomNavigationAction label='work' />
         <BottomNavigationAction label='vita' />
+        <BottomNavigationAction label='contact' />
       </BottomNavigation>
     </Box>
   );
