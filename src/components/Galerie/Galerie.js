@@ -27,7 +27,7 @@ function Galerie() {
       {matches ? (
         <Masonry columns={3} spacing={15}>
           {pictures.map((element, index) => (
-            <Card key={index} sx={{ border: 'none', boxShadow: 'none' }}>
+            <Card key={index} sx={{ border: 'none', boxShadow: 'none', borderRadius:'0px' }}>
               <Link to={`${element.image}`}>
                 <CardMedia
                   component='img'
@@ -36,10 +36,10 @@ function Galerie() {
                     pt: '0',
                   }}
                   image={`${element.image}?w=162&auto=format`}
-                  alt={element.artist}
+                  alt={element.material}
                 />
               </Link>
-              <CardContent sx={{ flexGrow: 1 }}>
+              <CardContent sx={{ flexGrow: 1, paddingLeft:'0px', paddingRight:'0px' }}>
                 <Typography
                   // sx={{ fontFamily: 'Alfa Slab One' }}
                   gutterBottom
@@ -48,17 +48,20 @@ function Galerie() {
                 >
                   {element.title}
                 </Typography>
-                <Typography
-                  // sx={{ fontFamily: 'Open Sans' }}
-                  variant='h6'
-                >
-                  {element.artist}
-                </Typography>
+                <div className='description'>
                 <Typography
                 // sx={{ fontFamily: 'Open Sans' }}
                 >
                   {element.year}
                 </Typography>
+                <Typography
+                  // sx={{ fontFamily: 'Open Sans' }}
+                  variant='h6'
+                >
+                  {element.material}
+                </Typography>
+                </div>
+               
               </CardContent>
               {/* <CardActions>
                 <ButtonGroup
@@ -81,7 +84,7 @@ function Galerie() {
               key={index}
               sx={{
                 border: '0px solid',
-                paddingBottom: '100px',
+                paddingBottom: '15px', borderRadius:'0px',
               }}
             >
               <Link to={`${element.image}`}>
@@ -92,7 +95,7 @@ function Galerie() {
                     pt: '0',
                   }}
                   image={`${element.image}?w=162&auto=format`}
-                  alt={element.artist}
+                  alt={element.material}
                 />
               </Link>
               <CardContent sx={{ flexGrow: 1 }}>
@@ -104,24 +107,27 @@ function Galerie() {
                 >
                   {element.title}
                 </Typography>
-                <Typography
-                  // sx={{ fontFamily: 'Open Sans' }}
-                  variant='h6'
-                >
-                  {element.artist}
-                </Typography>
+                <div className='description'>
                 <Typography
                 // sx={{ fontFamily: 'Open Sans' }}
                 >
                   {element.year}
                 </Typography>
+                <Typography
+                  // sx={{ fontFamily: 'Open Sans' }}
+                  variant='h6'
+                >
+                  {element.material}
+                </Typography>
+                </div>
+               
               </CardContent>
               <CardActions>
                 <ButtonGroup
                   variant='text'
                   aria-label='text button group'
                   color='inherit'
-                  sx={{ border: 'none', background: 'none' }}
+                  sx={{ border: 'none', background: 'none' , display:'none'}}
                 >
                   <Button>Edit</Button>
                   <Button>Delete</Button>
