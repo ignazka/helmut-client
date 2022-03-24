@@ -15,13 +15,13 @@
   background-color: white;
 }
 .css-1ee5err-MuiButtonBase-root-MuiBottomNavigationAction-root:first-child
-  .css-imwso6-MuiBottomNavigationAction-label {
+  .css-imwso6-MuiBottomNavigationAction-label,.bottom-navigation-logo {
   font-family: 'Ruda' !important;
   font-size: 1.5em;
 }
 
 body,
-.MuiTypography-root {
+.MuiTypography-root, button {
   font-family: 'Roboto Slab' !important;
   color: var(--text-color) !important;
 }
@@ -45,11 +45,15 @@ tr > td {
 
 .bottom-navigation-logo {
   text-align: left;
+  font-size:13px!important;
 }
 
 button {
+  color:var(--text-color)!important;
   min-width: auto !important;
   min-height: 60px;
+  font-family: 'Roboto Slab';
+
 }
 .content {
 }
@@ -134,6 +138,7 @@ button {
 .Vita {
   margin: auto;
   padding: 16px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 600px) {
@@ -269,6 +274,7 @@ button {
     width: 100%;
     margin: auto;
     padding-top: 0px;
+    
   }
 
   .Vita p {
