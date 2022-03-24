@@ -57,6 +57,7 @@ button {
 
 }
 .content {
+  padding-bottom:100px;
 }
 
 .Logo {
@@ -139,7 +140,7 @@ button {
 .Vita {
   margin: auto;
   padding: 16px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 
 @media screen and (min-width: 600px) {
