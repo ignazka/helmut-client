@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/helmut-client/static/css/main.705997d0.css",
+    "main.css": "/helmut-client/static/css/main.f1b0c0d3.css",
     "main.js": "/helmut-client/static/js/main.89a2e304.js",
     "static/js/787.dfddedda.chunk.js": "/helmut-client/static/js/787.dfddedda.chunk.js",
     "index.html": "/helmut-client/index.html",
-    "main.705997d0.css.map": "/helmut-client/static/css/main.705997d0.css.map",
+    "main.f1b0c0d3.css.map": "/helmut-client/static/css/main.f1b0c0d3.css.map",
     "main.89a2e304.js.map": "/helmut-client/static/js/main.89a2e304.js.map",
     "787.dfddedda.chunk.js.map": "/helmut-client/static/js/787.dfddedda.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.705997d0.css",
+    "static/css/main.f1b0c0d3.css",
     "static/js/main.89a2e304.js"
   ]
 }
