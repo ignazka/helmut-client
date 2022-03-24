@@ -156,8 +156,8 @@ button {
     display: grid;
     grid-gap: 15px 50px;
     grid-template: "logo ." "sidebar content" "footer footer";
-    grid-template-columns: auto auto;
-    grid-template-rows: auto 100% auto;
+    grid-template-columns: 360px auto;
+    grid-template-rows: auto auto auto;
     overflow-x: hidden;
     overflow-y: hidden;
   }
@@ -220,6 +220,7 @@ button {
 	grid-area: logo;
 	padding-left: 15px;
 	padding-top: 15px;
+  text-align: right;
 }
 
 .content {
